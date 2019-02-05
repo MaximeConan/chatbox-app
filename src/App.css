@@ -143,6 +143,7 @@ body {
 
 .form {
 	align-self: flex-end;
+	margin-top: 12px;
 }
 
 .form > * {
