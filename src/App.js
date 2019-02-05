@@ -57,7 +57,7 @@ class App extends Component {
       .keys(this.state.messages)
       .map(key => (
         <CSSTransition
-          timeout={2000}
+          timeout={500}
           classNames='fade'
           key={key}>
           <Message
