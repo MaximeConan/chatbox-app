@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 
 class Connexion extends Component {
-
   state = {
     pseudo: '',
     goToChat: false
@@ -20,7 +19,7 @@ class Connexion extends Component {
 
   render () {
     if (this.state.goToChat) {
-      return <Redirect to={`/pseudo/${this.state.pseudo}`} />
+      return <Redirect push to={`/pseudo/${this.state.pseudo}`} />
     }
 
     return (
